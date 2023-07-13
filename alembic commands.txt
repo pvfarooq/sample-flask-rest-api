@@ -1,0 +1,14 @@
+alembic revision -m "create table <tablename>"
+
+// write custom migrations
+
+alembic upgrade head
+
+alembic downgrade -1
+
+alembic current
+
+alembic history
+
+alembic merge -m "merge ..." <revision> <revision>
+ 
